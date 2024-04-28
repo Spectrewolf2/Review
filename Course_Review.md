@@ -34,7 +34,7 @@ In this Section you will be asked to do a few tasks. Follow the steps in order.
   - name this image "linux1"
   - move this image to the screenshots directory
 ### Step 5
-- Using the delete command delete the files listed below
+- delete the files listed below
   - portainer.sh
   - docker-compose-ollama.yml
 ### Linux WRAP UP 
