@@ -262,18 +262,19 @@ In this Section you will be asked to show your skills that you have gained
      # Install Ollama
      sudo docker run -d -p 8000:8000 --name=ollama --restart=always ollama/ollama
     - wordpress.sh
-      ```bash
+    ```bash
       #!/bin/bash
   
       # Install Docker
       sudo apt-get update
       sudo apt-get install -y docker.io
-
-    # Install WordPress
-    sudo docker volume create wordpress_data
-    sudo docker run -d -p 8080:80 --name=wordpress --restart=always -v wordpress_data:/var/www/html -e WORDPRESS_DB_HOST=wordpress-db:3306 -e WORDPRESS_DB_NAME=wordpress -e WORDPRESS_DB_USER=admin -e WORDPRESS_DB_PASSWORD=password wordpress
+      # Install WordPress
+        sudo docker volume create wordpress_data
+        sudo docker run -d -p 8080:80 --name=wordpress --restart=always -v wordpress_data:/var/www/html -e WORDPRESS_DB_HOST=wordpress-db:3306 -e WORDPRESS_DB_NAME=wordpress -e WORDPRESS_DB_USER=admin -e WORDPRESS_DB_PASSWORD=password wordpress
+      ```
 ### Terraform WRAP UP ###
 At the end of this section, students should be able to use Terraform to automate the provisioning of infrastructure on cloud platforms like AWS. They should understand how to write Terraform configuration files and use them to manage infrastructure as code, ensuring that deployments are reproducible and scalable.
+
 # Git
 Follow the diections
 ### Step 1 
