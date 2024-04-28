@@ -1,12 +1,22 @@
 # Course Review
 This review will cover the knowledge and skills you have gained thru out this course. The skills that you will be assessed on is Linux, Cloud Computing, Containerization, Ansible, and Terraform. Follow the directions for the sections below.
+# Git
+Follow the diections
+## Step 1 ##
+  Create a Branch
+- Navigate to the directory where they have cloned the repository.
+- Create a new branch named after their last name followed by _review (e.g., smith_review):
+  ```bash
+  git checkout -b lastname_review
+### Git WRAP UP ###
+- At the end of this section, students should be familiar with creating and switching branches in Git. This allows them to work on different features or sections of a project independently, without affecting the main codebase.
 # Linux
 In this Section you will be asked to do a few tasks. Follow the steps in order.
 ## Step 1 ##
 - Create a new directory called Review
-- Create these directories within Review
-  - terraform
-  - ansible
+  - Create these directories within Review
+    - terraform
+    - ansible
 ## Step 2 ##
 - Within the ansible directory create the files listed below
   - main.tf
