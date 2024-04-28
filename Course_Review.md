@@ -50,6 +50,10 @@ In this section you will be required to Navigate AWS platform and complete the t
 - Create a Storage Resourse
   - Name it MyStorage
 ### Step 3 
+- Take a screenshot of the VM and Storage running
+  - name this image "cloud1" and "cloud2"
+  - move this image to the screenshots directory
+### Step 4 
 - Create a key pair
   - Name it usethis
   - Save the key to your ansible directory
