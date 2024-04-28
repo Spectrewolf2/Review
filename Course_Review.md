@@ -300,6 +300,7 @@ Follow the diections
     
 # Put it all together
 - Use terraform to make instances in the cloud using the correct code (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+  - **you may need to adjust info and add "missing" information **
   - After The instances were created Navigate to the security groups
     - Ensure Port 22 is open for SSH
 - Take the IPs that terraform generated and add them to you Ansible Playbook
