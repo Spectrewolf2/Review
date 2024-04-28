@@ -13,10 +13,10 @@ Follow the diections
 # Linux
 In this Section you will be asked to do a few tasks. Follow the steps in order.
 ### Step 1 
-- Create a new directory called Review
-  - Create these directories within Review
-    - terraform
-    - ansible
+- Create these directories
+  - ansible
+  - terraform
+  - screenshots
 ### Step 2 
 - Within the ansible directory create the files listed below
   - main.tf
@@ -30,6 +30,10 @@ In this Section you will be asked to do a few tasks. Follow the steps in order.
   - move main.tf to terraform directory
   - move ansible-playbook.yml to ansible directory
 ### Step 4 
+- Take a screenshot from the CLI that shows the location of the main.tf and playbook.yml (use ls)
+  - name this image "linux1"
+  - move this image to the screenshots directory
+### Step 5
 - Using the delete command delete the files listed below
   - portainer.sh
   - docker-compose-ollama.yml
@@ -55,7 +59,7 @@ In this section you will be required to Navigate AWS platform and complete the t
 # Containerization
 In this section you will be show us the skills you have learned in Containerization
 ### Step 1 
-- Navigate to Ansible
+- Navigate to the ansible directory
 - Use the correct code to put the information listed below into the docker-compose-ollama.yml file
 - Input the code listed below
   ```yaml
@@ -70,7 +74,7 @@ In this section you will be show us the skills you have learned in Containerizat
       restart: always
    ```
 ### Step 2 
-- Navigate to Terraform
+- Navigate to Terraform directory
 - Use the code listed below for portainer.sh
   ```bash
   !/bin/bash
@@ -87,7 +91,7 @@ At the end of this section, students should be proficient in using Docker and do
 # Ansible
 In this section you will be asked to show your skills with Ansible
 ### Step 1 
-- Navigate to Ansible
+- Navigate to Ansible directory
 - Create the rest of the files listed below
   - docker-compose-portainer.yml
   - docker-compose-wordpress.yml
@@ -208,7 +212,7 @@ In this section you will be asked to show your skills with Ansible
 # Terraform
 In this Section you will be asked to show your skills that you have gained
 ### Step 1
-- Navigate to Terraform
+- Navigate to Terraform directory
 - Add the Following files
   - wordpress.sh
   - ollama.sh
@@ -269,6 +273,7 @@ At the end of this section, students should be able to use Terraform to automate
 # Git
 Follow the diections
 ### Step 1 
+  Navigate to Review directory
   Add Changes to the Staging Area:
 - Ensure you are still in your custom branch "git branch"
 - Add all changes/files/images to the staging area
