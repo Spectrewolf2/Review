@@ -46,6 +46,9 @@ In this section you will be required to Navigate AWS platform and complete the t
 - Create a Linux VM
    - Name the VM Pre-Assessment
    - use Unbuntu 22.04
+   - Create a key pair
+    - Name it usethis
+    - Save the key to your ansible directory
 ### Step 2 
 - Create a Storage Resourse
   - Name it MyStorage
