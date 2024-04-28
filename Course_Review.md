@@ -3,7 +3,8 @@ This review will cover the knowledge and skills you have gained thru out this co
 # Linux
 In this Section you will be asked to do a few tasks. Follow the steps in order.
 ## Step 1 ##
-- Create these directories
+- Create a new directory called Review
+- Create these directories within Review
   - terraform
   - ansible
 ## Step 2 ##
