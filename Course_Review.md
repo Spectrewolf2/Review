@@ -299,7 +299,7 @@ Follow the diections
 - At the end of this section, students should be able to push changes from their local repository to a remote repository. This is crucial for backing up their work and collaborating with others, as it integrates their contributions into the shared project.
     
 # Put it all together
-- Use terraform to make instances in the cloud using the correct code
+- Use terraform to make instances in the cloud using the correct code (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
   - After The instances were created Navigate to the security groups
     - Ensure Port 22 is open for SSH
 - Take the IPs that terraform generated and add them to you Ansible Playbook
