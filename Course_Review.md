@@ -64,8 +64,8 @@ In this section you will be required to Navigate AWS platform and complete the t
 In this section you will be show us the skills you have learned in Containerization
 ### Step 1 
 - Navigate to the ansible directory
-- Use the correct code to put the information listed below into the docker-compose-ollama.yml file
-- Input the code listed below
+- create file named docker-compose-ollama.yml
+- Input the code listed below into the docker-compose-ollama.yml file
   ```yaml
   version: '3'
 
@@ -79,7 +79,8 @@ In this section you will be show us the skills you have learned in Containerizat
    ```
 ### Step 2 
 - Navigate to Terraform directory
-- Use the code listed below for portainer.sh
+- Create file named portainer.sh
+- Input the code listed below into the portainer.sh file
   ```bash
   !/bin/bash
   # Install Docker
