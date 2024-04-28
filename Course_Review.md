@@ -207,7 +207,9 @@ In this section you will add the code to ensure ansible can run properly.
      web1 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=/your/path/usethis.pem
   
      web2 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=your/path/usethis.pem
-  
+
+     web3 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=your/path/usethis.pem
+
      [db_servers]
      db1 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
     - you will have to change the IPs and the path to you key that you will generate later
