@@ -43,23 +43,21 @@ In this Section you will be asked to do a few tasks. Follow the steps in order.
 # Cloud Computing
 In this section you will be required to Navigate AWS platform and complete the tasks given to you.
 ### Step 1 
-- Create a Linux VM
+- Create 1 compute instance
    - Name the VM Pre-Assessment
    - use Unbuntu 22.04
+   - create new security group
    - Create a key pair
-    - Name it usethis
-    - Save the key to your ansible directory
+      - Name it usethis
+      - Save the key to your ansible directory
 ### Step 2 
 - Create a Storage Resourse
-  - Name it MyStorage
+  - Name it lastname_bucket
 ### Step 3 
 - Take a screenshot of the VM and Storage running
   - name this image "cloud1" and "cloud2"
   - move this image to the screenshots directory
-### Step 4 
-- Create a key pair
-  - Name it usethis
-  - Save the key to your ansible directory
+
 ### Cloud WRAP UP 
 - At the end of this section, students should understand how to navigate the AWS platform to set up virtual machines, storage solutions, and security keys. They should be able to configure and deploy a basic cloud infrastructure, essential for modern IT environments.
 
