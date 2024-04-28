@@ -207,12 +207,12 @@ In this section you will be asked to show your skills with Ansible
 
 # Terraform
 In this Section you will be asked to show your skills that you have gained
-## Step 1
+### Step 1
 - Navigate to Terraform
 - Add the Following files
   - wordpress.sh
   - ollama.sh
-## Step 2
+### Step 2
 - Input the following information into the correct files
   - main.tf
     ```hcl
