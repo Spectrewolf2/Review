@@ -210,7 +210,7 @@ In this section you will add the code to ensure ansible can run properly.
   
      [db_servers]
      db1 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
-    - you will have to change the IPs and the path to you key that you generated later
+    - you will have to change the IPs and the path to you key that you will generate later
 ### Ansible WRAP UP ###
 - At the end of this section, students should have a firm grasp on using Ansible for configuration management and application deployment. They should know how to create Ansible playbooks to automate the deployment of Docker containers and configure environments consistently and reliably.
 
