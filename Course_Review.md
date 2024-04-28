@@ -3,7 +3,7 @@ This review will cover the knowledge and skills you have gained thru out this co
 # Git
 Follow the diections
 ### Step 1 
-  Create a Branch
+  Create a Branch and navagte to it
 - Navigate to the directory where they have cloned the repository.
 - Create a new branch named after their last name followed by _review (e.g., smith_review):
   ```bash
@@ -191,17 +191,17 @@ In this section you will be asked to show your skills with Ansible
  
     volumes:
       wordpress-db:
- - hosts.ini
-   ```yaml
-   # Define individual hosts
-   web1 ansible_host=100.26.174.32 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
-
-   web2 ansible_host=100.25.138.242 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
-
-   [db_servers]
-   #db1 ansible_host=100.25.10.62  # Assuming you want to define db1 in a separate group
-   db1 ansible_host=100.25.10.62 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
- - you will have to change the IPs and the path to you key that you generated later
+   - hosts.ini
+     ```yaml
+     # Define individual hosts
+     web1 ansible_host=100.26.174.32 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+  
+     web2 ansible_host=100.25.138.242 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+  
+     [db_servers]
+     #db1 ansible_host=100.25.10.62  # Assuming you want to define db1 in a separate group
+     db1 ansible_host=100.25.10.62 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+    - you will have to change the IPs and the path to you key that you generated later
 ### Ansible WRAP UP ###
 - At the end of this section, students should have a firm grasp on using Ansible for configuration management and application deployment. They should know how to create Ansible playbooks to automate the deployment of Docker containers and configure environments consistently and reliably.
 
@@ -243,29 +243,49 @@ In this Section you will be asked to show your skills that you have gained
 
       user_data     = file("ollama.sh")        # User data script for startup
     }
- - ollama.sh
-   ```bash
-   #!/bin/bash
-
-   # Install Docker
-   sudo apt-get update
-   sudo apt-get install -y docker.io
-
-   # Install Ollama
-   sudo docker run -d -p 8000:8000 --name=ollama --restart=always ollama/ollama
-  - wordpress.sh
-    ```bash
-    #!/bin/bash
-
-    # Install Docker
-    sudo apt-get update
-    sudo apt-get install -y docker.io
+   - ollama.sh
+     ```bash
+     #!/bin/bash
+  
+     # Install Docker
+     sudo apt-get update
+     sudo apt-get install -y docker.io
+  
+     # Install Ollama
+     sudo docker run -d -p 8000:8000 --name=ollama --restart=always ollama/ollama
+    - wordpress.sh
+      ```bash
+      #!/bin/bash
+  
+      # Install Docker
+      sudo apt-get update
+      sudo apt-get install -y docker.io
 
     # Install WordPress
     sudo docker volume create wordpress_data
     sudo docker run -d -p 8080:80 --name=wordpress --restart=always -v wordpress_data:/var/www/html -e WORDPRESS_DB_HOST=wordpress-db:3306 -e WORDPRESS_DB_NAME=wordpress -e WORDPRESS_DB_USER=admin -e WORDPRESS_DB_PASSWORD=password wordpress
 ### Terraform WRAP UP ###
 At the end of this section, students should be able to use Terraform to automate the provisioning of infrastructure on cloud platforms like AWS. They should understand how to write Terraform configuration files and use them to manage infrastructure as code, ensuring that deployments are reproducible and scalable.
+# Git
+Follow the diections
+### Step 1 
+  Add Changes to the Staging Area:
+- Ensure you are still in your custom branch "git branch"
+- Add all changes/files/images to the staging area
+  ```bash
+  git add .
+### Step 2
+  Commit the changes with an appropriate commit message 
+  ```bash
+  git commit -m "Complete course review tasks"
+```
+### Step 3
+  Push their branch to the remote repository
+  ```bash
+  git push origin lastname_review
+```
+### Git WRAP UP 
+- At the end of this section, students should be able to push changes from their local repository to a remote repository. This is crucial for backing up their work and collaborating with others, as it integrates their contributions into the shared project.
     
 # Put it all together
 - Use terraform to make instances in the cloud using the correct code
