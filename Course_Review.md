@@ -2,22 +2,22 @@
 This review will cover the knowledge and skills you have gained thru out this course. The skills that you will be assessed on is Linux, Cloud Computing, Containerization, Ansible, and Terraform. Follow the directions for the sections below.
 # Git
 Follow the diections
-## Step 1 ##
+### Step 1 
   Create a Branch
 - Navigate to the directory where they have cloned the repository.
 - Create a new branch named after their last name followed by _review (e.g., smith_review):
   ```bash
   git checkout -b lastname_review
-### Git WRAP UP ###
+### Git WRAP UP 
 - At the end of this section, students should be familiar with creating and switching branches in Git. This allows them to work on different features or sections of a project independently, without affecting the main codebase.
 # Linux
 In this Section you will be asked to do a few tasks. Follow the steps in order.
-## Step 1 ##
+### Step 1 
 - Create a new directory called Review
   - Create these directories within Review
     - terraform
     - ansible
-## Step 2 ##
+### Step 2 
 - Within the ansible directory create the files listed below
   - main.tf
   - host.ini
@@ -25,36 +25,36 @@ In this Section you will be asked to do a few tasks. Follow the steps in order.
 - Within the terraform directory create the following files listed below
   - ansible-playbook.yml
   - portainer.sh
-## Step 3 ##
+### Step 3 
 - Using the move command, move the files listed below to the correct directories
   - move main.tf to terraform directory
   - move ansible-playbook.yml to ansible directory
-## Step 4 ##
+### Step 4 
 - Using the delete command delete the files listed below
   - portainer.sh
   - docker-compose-ollama.yml
-### Linux WRAP UP ###
+### Linux WRAP UP 
 - At the end of this section, students should know how to manage files and directories using basic Linux commands. They should be comfortable creating, moving, and deleting files and directories, which are fundamental skills for any system administrator.
 
 # Cloud Computing
 In this section you will be required to Navigate AWS platform and complete the tasks given to you.
-## Step 1 ##
+### Step 1 
 - Create a Linux VM
    - Name the VM Pre-Assessment
    - use Unbuntu 22.04
-## Step 2 ##
+### Step 2 
 - Create a Storage Resourse
   - Name it MyStorage
-## Step 3 ##
+### Step 3 
 - Create a key pair
   - Name it usethis
   - Save the key to your ansible directory
-### Cloud WRAP UP ###
+### Cloud WRAP UP 
 - At the end of this section, students should understand how to navigate the AWS platform to set up virtual machines, storage solutions, and security keys. They should be able to configure and deploy a basic cloud infrastructure, essential for modern IT environments.
 
 # Containerization
 In this section you will be show us the skills you have learned in Containerization
-## Step 1 ##
+### Step 1 
 - Navigate to Ansible
 - Use the correct code to put the information listed below into the docker-compose-ollama.yml file
 - Input the code listed below
@@ -69,7 +69,7 @@ In this section you will be show us the skills you have learned in Containerizat
         - "8000:8000"
       restart: always
    ```
-## Step 2 ##
+### Step 2 
 - Navigate to Terraform
 - Use the code listed below for portainer.sh
   ```bash
@@ -81,18 +81,18 @@ In this section you will be show us the skills you have learned in Containerizat
   # Install Portainer
   sudo docker volume create portainer_data
   sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
-### Container WRAP UP ###
+### Container WRAP UP 
 At the end of this section, students should be proficient in using Docker and docker-compose through configuration files to deploy and manage containerized applications. This includes understanding how to write and apply docker-compose files to control the behavior of Docker containers.
 
 # Ansible
 In this section you will be asked to show your skills with Ansible
-## Step 1
+### Step 1 
 - Navigate to Ansible
 - Create the rest of the files listed below
   - docker-compose-portainer.yml
   - docker-compose-wordpress.yml
   - host.ini
-## Step 2 
+### Step 2 
 - Input the following code into the correct files
   - ansible-playbook.yml
     ```yaml
