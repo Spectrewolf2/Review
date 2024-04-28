@@ -61,7 +61,7 @@ In this section you will be required to Navigate AWS platform and complete the t
 - At the end of this section, students should understand how to navigate the AWS platform to set up virtual machines, storage solutions, and security keys. They should be able to configure and deploy a basic cloud infrastructure, essential for modern IT environments.
 
 # Containerization
-In this section you will be show us the skills you have learned in Containerization
+In this section you will create docker compose files and add code to automate the installation of docker.
 ### Step 1 
 - Navigate to the ansible directory
 - create file named docker-compose-ollama.yml
@@ -94,15 +94,15 @@ In this section you will be show us the skills you have learned in Containerizat
 At the end of this section, students should be proficient in using Docker and docker-compose through configuration files to deploy and manage containerized applications. This includes understanding how to write and apply docker-compose files to control the behavior of Docker containers.
 
 # Ansible
-In this section you will be asked to show your skills with Ansible
+In this section you will add the code to ensure ansible can run properly.
 ### Step 1 
 - Navigate to Ansible directory
-- Create the rest of the files listed below
+- Create the files listed below
   - docker-compose-portainer.yml
   - docker-compose-wordpress.yml
   - host.ini
 ### Step 2 
-- Input the following code into the correct files
+- Input the following code into ansible-playbook.yml
   - ansible-playbook.yml
     ```yaml
     - name: Install required packages
@@ -203,13 +203,12 @@ In this section you will be asked to show your skills with Ansible
    - hosts.ini
      ```yaml
      # Define individual hosts
-     web1 ansible_host=100.26.174.32 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+     web1 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=/your/path/usethis.pem
   
-     web2 ansible_host=100.25.138.242 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+     web2 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=your/path/usethis.pem
   
      [db_servers]
-     #db1 ansible_host=100.25.10.62  # Assuming you want to define db1 in a separate group
-     db1 ansible_host=100.25.10.62 ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
+     db1 ansible_host=your ip ansible_user=admin ansible_ssh_private_key_file=/home/student/ansible/usethis.pem
     - you will have to change the IPs and the path to you key that you generated later
 ### Ansible WRAP UP ###
 - At the end of this section, students should have a firm grasp on using Ansible for configuration management and application deployment. They should know how to create Ansible playbooks to automate the deployment of Docker containers and configure environments consistently and reliably.
